@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+      font-family: poppins;
+}
+
+body {
+      background: url(../../img/kota-newyork.jpg) no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+.navbar {
+      background: rgb(0, 0, 0, .9);
+      background-position: bottom;
+      z-index: 20;
+      font-size: 95%;
+}
+
+.navbar-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.navbar-brand:hover .bxs-skull{
+      animation: tada 1.5s linear infinite;
+}
+
+.nav-link.active {
+      transform: scale(1.1);
+}
+
+.navbar-brand img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+}
+
+.navbar-brand h2 {
+      font-size: 1.5rem;
+}
+
+.nav-link {
+      font-size: .8rem;
+}
+
+.nav-item .btn {
+      font-size: .8rem;
+}
+
+.nav-item #login {
+      background-position: left;
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+#pencaharian input:focus{
+      box-shadow: none;
+}
+
+#pencaharian input, #pencaharian button {
+      font-size: .9rem;
+}
+
+#heading-content {
+      background-color: rgba(0, 0, 0, .9);
+}
+
+#project {
+      position: relative;
+      background: rgb(25, 105, 49);
+      transition: .1s ease-in-out;
+      z-index: 22;
+      border: 1px solid;
+      padding-left: 0;
+      padding-right: 0;
+      overflow: hidden;
+}
+
+#project:hover{
+      background: rgb(23, 66, 36);
+}
+
+#project .waves-animate svg {
+      fill: #00cba9;
+}
+
+#project .waves-animate svg:hover {
+      fill: #00ffd5;
+}
+
+#project #title-project {
+      opacity: 0;
+      margin-top: -10%;
+}
+
+#project #title-project h1{
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+}
+
+#project #title-project img {
+      width: 70px;
+      transform: rotate(-45deg);
+      margin-bottom: 20px;
+}
+
+#project .card *{
+      font-size: 85%;
+}
+
+#project .card img {
+      width: 100%;
+}
+
+#project .card p {
+      font-size: .5rem;
+}
+
+#project .card button {
+      font-weight: 700;
+      font-size: .6rem;
+      width: 100%;
+}
+
+#re-footer {
+      overflow: hidden;
+      background-color: rgb(12, 12, 12, 0.5);
+      backdrop-filter: blur(3px);
+}
+
+footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 40;
+}
+
+#sub-footer .card {
+      border: none;
+      background-color: transparent;
+      color: white;
+      font-size: .8rem;
+}
+
+#sub-footer .card .card-body h6 {
+      font-weight: 800;
+}
+
+footer p {
+      color: rgb(255, 255, 255);
+      margin: 0;
+}
+
+
+@media (max-width: 585px){
+      #heading-content img {
+            width: 50%;
+      }
+}
