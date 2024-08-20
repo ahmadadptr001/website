@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="font-family: poppins; padding: 1rem;">
+
+      <!-- code basic of accordion -->
+
+      <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <strong>
+                                    Nama
+                              </strong>
+                        </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent='#accordionExample'>
+                        <div class="accordion-body">
+                              Ahmad Bagas Adiputra (bagas)
+                        </div>
+                  </div>
+            </div>
+
+            <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <strong>
+                                    Umur
+                              </strong>
+                        </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                              19 Tahun
+                        </div>
+                  </div>
+            </div>
+
+            <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <strong>
+                                    Random Teks
+                              </strong>
+                        </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iusto quae ex deleniti
+                              obcaecati soluta placeat repellendus ea cumque enim consequatur commodi natus iure eveniet
+                              nihil consequuntur, veniam laborum? Exercitationem!
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
+      <div class="row m-5"></div>
+
+      <!-- code basic dropdown -->
+      <div class="dropdown">
+            <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropDownMenu"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  information
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropDownMenu">
+                  <li>
+                        <a href="#" class="dropdown-item active">Nama</a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Umur</a></li>
+                  <li><a href="#" class="dropdown-item">Hobi</a></li>
+                  <li>
+                        <hr class="dropdown-divider">
+                  </li>
+                  <li><a href="#" class="dropdown-item">random Teks</a></li>
+            </ul>
+      </div>
+
+
+
+      <div class="row m-5"></div>
+
+      <!-- code basic offcanvas -->
+
+      <a href="#offcanvasExample" class="btn btn-primary" data-bs-toggle="offcanvas" role="button"
+            aria-controls="offcanvasExample">
+            Open Biodata
+      </a>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Biodata</h5>
+                  <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                  <div style="font-weight: lighter;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus expedita, magni nam itaque
+                        dolore excepturi molestiae ratione, totam eum laborum quas aspernatur ducimus, rem provident est
+                        at eos corporis corrupti.
+                  </div>
+            </div>
+      </div>
+
+
+
+      <!--  code basic switch checkbox input  -->
+
+      <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="flexSwitchCheckDefault">
+            <label for="flexSwitchCheckDefault" class="form-check-label"> Ya/Tidak</label>
+      </div>
+
+
+      <!-- code default needs validate form custom -->
+
+      <form class="m-auto row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                  <label for="validasiCustom1" class="form-label">Nama Depan</label>
+                  <input type="text" class="form-control" id="validasiCustom1" required>
+                  <div class="valid-feedback">Nama yang bagus</div>
+                  <div class="invalid-feedback">Tolong isi nama Anda</div>
+            </div>
+
+            <div class="col-md-4">
+                  <label for="validasiCustom2" class="form-label">Nama Belakang</label>
+                  <input type="text" class="form-control" id="validasiCustom2" required>
+                  <div class="valid-feedback">Nama yang bagus</div>
+                  <div class="invalid-feedback">Tolong isi nama Anda</div>
+            </div>
+
+            <div class="col-md-4">
+                  <label for="validasiCustomUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validasiCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="valid-feedback">Username yang bagus</div>
+                        <div class="invalid-feedback">Tolong isi Username Anda</div>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                  <label for="validasiCustom3" class="form-label">Kota</label>
+                  <input type="text" class="form-control" id="validasiCustom3" required>
+                  <div class="invalid-feedback">Kota Anda tinggal sekarang</div>
+            </div>
+            <div class="col-md-3">
+                  <label for="validasiCustom4" class="form-label">State</label>
+                  <select class="form-select" id="validasiCustom4" required>
+                        <option selected disabled value="contol">Pilih</option>
+                        <option> state1 </option>
+                        <option> state2 </option>
+                        <option> ...</option>
+                  </select>
+                  <div class="invalid-feedback">Pilih state yang valid</div>
+            </div>
+            <div class="col-md-3 mt-auto">
+                  <input type="file" class="form-control" aria-label="file example" required>
+                  <div class="invalid-feedback">Silahkan pilih file!</div>
+            </div>
+            <div class="col-12">
+                  <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="invalidCheck" required>
+                        <label for="invalidCheck" class="form-check-label">
+                              Setuju dengan persyartan
+                        </label>
+                        <div class="invalid-feedback">Anda harus menyutuji semua persyaratan terlebih dahulu!</div>
+                  </div>
+            </div>
+            <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+      </form>
+
+
+      <!-- code basic toast -->
+      <button type="button" class="btn btn-success" id="liveToastBtn">Pesan Baru</button>
+      
+      <div class="position-fixed top-0 end-0 p-3" style="z-index: 11;">
+            <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                        <img src="../happy-birthday/img/anime-girl (1).gif" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                        <strong class="me-auto">Ayang</strong>
+                        <small>11 menit yang lalu</small>
+                        <button class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+
+                  <div class="toast-body">
+                        Sayaaaang rinduuuuuuuuuuuuu
+                  </div>
+            </div>
+      </div>
+
+      <script src="../style/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+      <script>
+            
+            // script tambahan untuk needs validate custom
+                  (function () {
+                        'use strict'
+
+                        let forms = document.querySelectorAll('.needs-validation');
+
+                        Array.prototype.slice.call(forms)
+                              .forEach(function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                          if (!form.checkValidity()) {
+                                                event.preventDefault()
+                                                event.stopPropagation()
+                                          }
+
+                                          form.classList.add('was-validated')
+                                    }, false)
+                              })
+                                    
+                  })()
+
+      </script>
+</body>
+
+</html>

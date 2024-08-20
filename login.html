@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Halaman login</title>
+      <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style/css/boxicons.min.css">
+      <link rel="stylesheet" href="style/css/login.css">
+      <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body id="body" class="body container bg-dark">
+
+      <nav class="navbar mb-5">
+            <div class="navbar-brand">
+                  <button class="btn btn-primary" id="back-to-index" class="btn btn-outline-secondary">
+                        <a href="index.html" class="nav-link text-light">
+                              <i class="bx bx-arrow-from-right me-1"></i>back
+                        </a>
+                  </button >
+            </div>
+      </nav>
+
+      <div class="container fluid">
+            <div class="row">
+                  <div class="card p-4 col-12 offset-0 col-sm-12 offset-sm-0 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                        <div class="card-head">
+                              <h2 class="card-title text-center" style="font-weight: 800;">
+                                    Login <i class="bx bx-tada bx-meteor"></i>
+                              </h2>
+                              <hr style="color: rgb(255, 255, 255); border: 3px solid; border-radius: 5px;">
+                        </div>
+                        <form class="card-body text-center" method="post">
+                              <p class="box-email form-floating card-text mt-4">
+                                    <input class="form-control form-control-sm" name="email-user" id="email-user" type="email" placeholder="example@gmail.com" required>
+                                    <label id="label-email" for="email-user">Email</label>
+                                    <i class="bx bxl-gmail"></i>
+                              </p>
+
+                              <p class="box-pwd form-floating card-text">
+                                    <input class="form-control form-control-sm" name="pwd" id="pwd" type="password" placeholder="Password" aria-label=".form-control-sm" required>
+                                    <label id="label-pwd" for="pwd">Password</label>
+                                    <i id="key" class="bx bx-hide"></i>
+                              </p>
+
+                              <p class="card-text">
+                                    <button id="btn-submit" type="submit" class="btn btn-success" style="width: 100%;">submit</button>
+                              </p>
+
+                              <p class="card-text">
+                                    <button id="back-to-index2" class="btn btn-danger" style="width: 100%;">
+                                          <a href="index.html" class="nav-link">
+                                                back
+                                          </a>
+                                    </button class="btn btn-primary">
+                              </p>
+
+                              <p id="text-or" class="card-text py-2" style="font-size: .7rem; color: rgb(214, 214, 214); font-weight: 600;">
+                                    or login with
+                              </p>
+                              <p id="google-facebook" class="card-text">
+                                    <a href="#" class="nav-link">
+                                          <i class="bx bx-tada-hover bxl-google me-3" style="color: rgb(255, 255, 255); font-size: .9rem; background-color: rgb(119, 0, 255);">oogle</i>
+                                          <i class="bx bx-tada-hover bxl-facebook" style="color: rgb(255, 255, 255); font-size: .9rem;">acebook</i>
+                                    </a>
+                              </p>
+                        </form>
+                  </div>
+            </div>
+      </div>
+
+      <script src="style/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/scrollreveal.min.js"></script>
+      <script src="js/login.js"></script>
+</body>
+
+</html>

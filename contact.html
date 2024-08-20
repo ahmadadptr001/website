@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Halaman kontak</title>
+      <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style/css/boxicons.min.css">
+      <link rel="stylesheet" href="style/css/contact.css">
+      <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body class="body container-fluid bg-light" data-bs-theme="light">
+
+      <nav class="navbar navbar-expand-lg p-3">
+            <div class="container">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContact" aria-controls="navbarContact" aria-expanded="false" aria-label="Toggle navigation" >
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div id="navbarContact" class="navbar-collapse collapse text-center">
+                        <a href="index.html" class="navbar-brand">
+                              <h2>
+                                    <i class="bx bxs-skull"></i>
+                                    Ahmadptr
+                              </h2>
+                        </a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                              <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="articles/index.html" class="nav-link">Articles</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="contact.html" class="nav-link active">Contact</a>
+                              </li>
+                              <div class="d-flex justify-content-center gap-3 gap-lg-0">
+                                    <li class="nav-item">
+                                          <a href="login.html" class="nav-link text-success">Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                          <a href="#" class="nav-link text-primary">Sign in</a>
+                                    </li>
+                              </div>
+                        </ul>
+                        <form method="post" class="d-flex justify-content-end searching" role="search">
+                              <i class="bx bxs-sun btn btn-warning text-light me-2 d-flex align-items-center justify-content-center py-2 px-2 rounded-circle" style="font-size: 1.5rem;"></i>
+                        </form>
+                  </div>
+            </div>
+      </nav>
+
+      <div class="container-fluid card-container py-5">
+            <div class=" p-2 card text-center border-0 col-12 offset-0 col-xl-4offset-xl-4 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                  <h5 class="card-title bx-tada-hover">Contact Me</h5>
+                  <div class="card-body">
+                        <p class="card-text text-secondary mt-2 text-sm-center">
+                              Jika Anda ingin mengobrol tentang pekerjaan atau memiliki pertanyaan,
+                              Silahkan jalankan prosedur esusai yang ada pada formulir.
+                        </p>
+
+                        <form method="POST" class="form mt-5">
+                              <div class="input-box">
+                                    <div class="d-sm-flex gap-sm-1">
+                                          <div class="text-start w-100">
+                                                <p class="m-0">Nama <span class="text-warning">*</span></p>
+                                                <input class="w-100 rounded-3" type="text" name="name" id="name" placeholder="Udin Saputra" required>
+                                          </div>
+                                          <div class="text-start w-100 mt-2 mt-sm-0">
+                                                <p class="m-0">Email <span class="text-warning">*</span></p>
+                                                <input class="w-100 rounded-3" type="email" name="email" id="email" placeholder="contoh@gmail.com" required>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="text-start w-100 mt-2">
+                                    <p class="m-0">Subjek <span class="text-warning">*</span></p>
+                                    <input class="w-100 rounded-3" type="text" name="subjek" id="subjek" required>
+                              </div>
+                              <div class="text-start w-100 mt-2">
+                                    <p class="m-0">Mesage <span class="text-warning">*</span></p>
+                                    <textarea name="message" id="message" class="w-100 rounded-3" rows="8" placeholder="Masukkan komentar.." required></textarea>
+                              </div>
+
+                              
+                              <div class="text-start mt-2 p-0">
+                                    <button type="submit" class="p-2 px-4 btn badge w-40 rounded-pill bg-success">Kirim</button>
+                              </div>
+                        </form>
+                  </div>
+            </div>
+      </div>
+      
+      <div class="line pt-4 px-3"><hr class="border-2 rounded-pill m-0 pb-2"></div>
+      
+      <footer class="footer d-flex justify-content-between px-3">
+            <p>&copy;2024 Ahmadptr</p>
+            <p>built with <span class="text-danger">bootstrap 5.0</span></p>
+      </footer>
+
+      <script src="style/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/contact.js"></script>
+</body>
+
+</html>
