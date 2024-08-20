@@ -47,6 +47,7 @@
 
 .box-toast * {
       font-size: .6rem;
+      font-weight: 600;
 }
 
 .box-toast strong {
