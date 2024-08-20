@@ -34,7 +34,7 @@
 
 .box-toast {
       width: 100%;
-      color: rgb(88, 88, 88);
+      color: rgb(0,0,0);
       opacity: 1;
       position: fixed;
       top: -200px;
