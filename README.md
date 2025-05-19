@@ -1,2 +1,2 @@
 # website
-Projek sedang dikembangkan..
+Projek sudah ditinggalkan..
